@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="8dp">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -23,8 +23,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
-        android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="ashleyyoon" />
+        android:layout_toEndOf="@id/tvName"
+        tools:text="username" />
 
     <TextView
         android:id="@+id/tvBody"
@@ -34,6 +34,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#000"
         tools:text="tweet" />
 
     <TextView
@@ -46,4 +47,16 @@
         android:layout_marginEnd="11dp"
         android:layout_marginRight="0dp"
         tools:text="25 mins ago" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#000"
+        android:textStyle="bold"
+        tools:text="name" />
 </RelativeLayout>
